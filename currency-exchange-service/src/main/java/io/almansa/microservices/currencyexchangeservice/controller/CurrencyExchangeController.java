@@ -1,4 +1,4 @@
-package io.almansa.microservices.currencuexchangeservice.controller;
+package io.almansa.microservices.currencyexchangeservice.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import io.almansa.microservices.currencuexchangeservice.bean.ExchangeValue;
-import io.almansa.microservices.currencuexchangeservice.repository.ExchangeValueRepository;
+import io.almansa.microservices.currencyexchangeservice.bean.ExchangeValue;
+import io.almansa.microservices.currencyexchangeservice.repository.ExchangeValueRepository;
 
 @RestController
 public class CurrencyExchangeController {

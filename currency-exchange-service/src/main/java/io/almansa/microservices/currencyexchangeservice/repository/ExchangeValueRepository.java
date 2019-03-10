@@ -1,8 +1,8 @@
-package io.almansa.microservices.currencuexchangeservice.repository;
+package io.almansa.microservices.currencyexchangeservice.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import io.almansa.microservices.currencuexchangeservice.bean.ExchangeValue;
+import io.almansa.microservices.currencyexchangeservice.bean.ExchangeValue;
 
 public interface ExchangeValueRepository extends JpaRepository<ExchangeValue, Long> {
 

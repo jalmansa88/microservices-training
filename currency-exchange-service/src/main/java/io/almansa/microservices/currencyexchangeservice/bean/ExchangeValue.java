@@ -1,4 +1,4 @@
-package io.almansa.microservices.currencuexchangeservice.bean;
+package io.almansa.microservices.currencyexchangeservice.bean;
 
 import java.math.BigDecimal;
 

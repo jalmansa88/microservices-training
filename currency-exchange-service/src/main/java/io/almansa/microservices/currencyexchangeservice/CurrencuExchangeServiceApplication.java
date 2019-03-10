@@ -1,4 +1,4 @@
-package io.almansa.microservices.currencuexchangeservice;
+package io.almansa.microservices.currencyexchangeservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
