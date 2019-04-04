@@ -21,7 +21,9 @@ public class CurrencyConversionController {
 	private CurrencyExchangeServiceProxy proxy;
 
 	@GetMapping("/currency-converter/from/{from}/to/{to}/quantity/{quantity}")
-	public CurrencyConversionBean convertCurrency(@PathVariable String from, @PathVariable String to,
+	public CurrencyConversionBean convertCurrency(
+			@PathVariable String from,
+			@PathVariable String to,
 			@PathVariable BigDecimal quantity) {
 
 		Map<String, String> uriVariables = new HashMap<>();
@@ -51,7 +53,9 @@ public class CurrencyConversionController {
 	}
 	
 	@GetMapping("/currency-converter-feign/from/{from}/to/{to}/quantity/{quantity}")
-	public CurrencyConversionBean convertCurrencyFeign(@PathVariable String from, @PathVariable String to,
+	public CurrencyConversionBean convertCurrencyFeign(
+			@PathVariable String from, 
+			@PathVariable String to,
 			@PathVariable BigDecimal quantity) {
 		
 		CurrencyConversionBean response = proxy.retrieveExchangeValue(from, to);
